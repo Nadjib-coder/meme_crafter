@@ -1,0 +1,83 @@
+/* Start Header sectionstyle */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #d1ab01e3;
+  padding: 20px 0;
+  gap: 15px;
+}
+header h1 {
+  font-size: 2rem;
+  color: #000;
+  margin: 0;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+header img {
+  width: 40px;
+  height: 40px;
+}
+/* end Header section style */
+
+/* start Main section style */
+main {
+  width: 500px;
+  margin: 25px auto;
+}
+main h3 {
+  color: #475467;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+  margin-bottom: 25px;
+}
+main form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main form .input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+main form .input-row input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #7a8699;
+  margin-top: 10px;
+  
+}
+main form .input-row label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+main form .input-row input:focus {
+  outline: none;
+  border: 1.2px solid #d1ab01e3;
+  box-shadow: 0 0 4px #d1ab01e3;
+}
+
+main form button {
+  margin-top: 20px;
+  width: 90%;
+  padding: 8px 12px;
+  background-color: #d1ab01e3;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+main form button:hover {
+  box-shadow: 0 4px 15px #d1ab0180; /* golden glow */
+  transform: translateY(-1px);
+}
+main .meme img {
+width: 100%;
+}
+/* start Main section style */
+
