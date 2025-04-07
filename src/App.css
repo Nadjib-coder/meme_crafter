@@ -42,21 +42,21 @@ main h3 {
   margin-bottom: 25px;
 }
 
-form {
+.form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-form .input-row {
+.form .input-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
 }
 
-form .input-row input {
+.form .input-row input {
   padding: 8px 12px;
   border-radius: 5px;
   border: 1px solid #7a8699;
@@ -65,19 +65,19 @@ form .input-row input {
   
 }
 
-form .input-row label {
+.form .input-row label {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-form .input-row input:focus {
+.form .input-row input:focus {
   outline: none;
   border: 1.2px solid #d1ab01e3;
   box-shadow: 0 0 4px #d1ab01e3;
 }
 
-form button {
+.form button {
   margin-top: 20px;
   width: 90%;
   padding: 8px 12px;
@@ -88,7 +88,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.form button:hover {
   box-shadow: 0 4px 15px #d1ab0180; /* golden glow */
   transform: translateY(-1px);
 }
@@ -137,16 +137,16 @@ form button:hover {
   main {
     width: 90%;
   }
-  form .input-row {
+  .form .input-row {
     flex-direction: column;
   }
-  form .input-row {
+  .form .input-row {
     width: 100%;
   }
-  form .input-row label {
+  .form .input-row label {
     width: 100%;
   }
-  form button {
+  .form button {
     width: 100%;
   }
   .meme span {
@@ -164,7 +164,7 @@ footer p {
   margin: 0;
   color: #fff;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 footer a {
   color: #91DCF5;
@@ -174,7 +174,8 @@ footer a {
 
 @media (max-width: 600px) {
   footer p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 0 15px;
   }
 }
 /* End Footer section style */
