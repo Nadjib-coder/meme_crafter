@@ -6,6 +6,7 @@ header {
   padding: 20px 0;
   gap: 15px;
 }
+
 header h1 {
   font-size: 2rem;
   color: #000;
@@ -13,17 +14,26 @@ header h1 {
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
 }
+
 header img {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 /* end Header section style */
 
 /* start Main section style */
 main {
-  width: 500px;
+  max-width: 500px;
   margin: 25px auto;
 }
+
 main h3 {
   color: #475467;
   text-align: center;
@@ -31,37 +41,43 @@ main h3 {
   margin: 0;
   margin-bottom: 25px;
 }
-main form {
+
+form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main form .input-row {
+
+form .input-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
 }
-main form .input-row input {
+
+form .input-row input {
   padding: 8px 12px;
   border-radius: 5px;
   border: 1px solid #7a8699;
   margin-top: 10px;
+ width: 100%;
   
 }
-main form .input-row label {
+
+form .input-row label {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-main form .input-row input:focus {
+
+form .input-row input:focus {
   outline: none;
   border: 1.2px solid #d1ab01e3;
   box-shadow: 0 0 4px #d1ab01e3;
 }
 
-main form button {
+form button {
   margin-top: 20px;
   width: 90%;
   padding: 8px 12px;
@@ -72,12 +88,93 @@ main form button {
   cursor: pointer;
 }
 
-main form button:hover {
+form button:hover {
   box-shadow: 0 4px 15px #d1ab0180; /* golden glow */
   transform: translateY(-1px);
 }
-main .meme img {
-width: 100%;
+.meme {
+  margin: 30px 0 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.meme img {
+  max-width: 100%;
+  border-radius: 4px;
+  height: auto;
+}
+.meme span {
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  text-transform: uppercase;
+  text-shadow:
+  2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0 2px 0 #000,
+  2px 0 0 #000,
+  0 -2px 0 #000,
+  -2px 0 0 #000,
+  2px 2px 5px #000;
+
+}
+
+.top-text {
+  top: 0;
+}
+
+.buttom-text {
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  form .input-row {
+    flex-direction: column;
+  }
+  form .input-row {
+    width: 100%;
+  }
+  form .input-row label {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+  }
+  .meme span {
+    font-size: 0.9rem;
+  }
 }
 /* start Main section style */
 
+/* Start Footer section style */
+footer {
+  background-color: #2C2C2C;
+  padding: 15px 0;
+}
+footer p {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer a {
+  color: #91DCF5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+/* End Footer section style */
