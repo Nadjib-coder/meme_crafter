@@ -10,4 +10,6 @@ html, body, #root {
 
 body {
   font-family: "Karla", sans-serif;
+  background-color: #f9fafb;
+  color: #0f172a;
 }

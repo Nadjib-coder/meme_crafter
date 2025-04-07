@@ -17,7 +17,6 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #000;
   margin: 0;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
@@ -70,8 +69,7 @@ main h3 {
   border-radius: 5px;
   border: 1px solid #7a8699;
   margin-top: 10px;
- width: 100%;
-  
+  width: 100%;
 }
 
 .form .input-row label {
@@ -88,7 +86,7 @@ main h3 {
 
 .form button {
   margin-top: 20px;
-  width: 90%;
+  width: 100%;
   padding: 8px 12px;
   background-color: #d1ab01e3;
   color: #fff;
