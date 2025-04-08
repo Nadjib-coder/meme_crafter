@@ -11,8 +11,16 @@ export default function Main() {
 
   useEffect(() => {
     fetch('https://api.imgflip.com/get_memes')
-      .then((res) => res.json())
-      .then((data) => setAllMemeImage(data.data.memes));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => setAllMemeImage(data.data.memes))
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
   }, []);
 
   function handleChange(event) {
